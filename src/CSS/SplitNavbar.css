@@ -1,0 +1,23 @@
+.split-navbar-body {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    width: 11.4%;
+    position: fixed;
+    left: 10px;
+    justify-content: center;
+    height: 56px;
+}
+
+
+
+.default-split-navbar {
+    background-color: #365486;
+}
+
+.dark-split-navbar {
+    background-color: #18122B !important;
+}
+
+.light-split-navbar {
+    background-color: #C3ACD0;
+}

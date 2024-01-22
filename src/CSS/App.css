@@ -1,0 +1,35 @@
+.charts {
+  margin-top: 20px;
+  margin-left: 13%;
+  margin-right: 1.2%;
+  padding: 20px;
+  border-radius: 10px;
+  height: fit-content;
+}
+
+.default-charts {
+  background-color: #DCF2F1;
+}
+
+.light-charts {
+  background-color: #F7EFE5;
+}
+
+.dark-charts {
+  background-color: #443C68;
+}
+
+
+
+
+.default-mainBG {
+  background-color: #7FC7D9;
+}
+
+.light-mainBG {
+  background-color: #FFFBF5;
+}
+
+.dark-mainBG {
+  background-color: #393053;
+}

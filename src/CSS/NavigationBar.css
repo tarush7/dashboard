@@ -1,0 +1,65 @@
+.navigation-bar-body {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  width: 86%;
+  position: relative;
+  left: 195px;
+}
+
+.default-navigation-bar {
+  background-color: #365486 !important;
+}
+
+.default .Navbar-Brand {
+  color: #fff;
+}
+
+.default .Navbar-Brand:hover {
+  color: #0F1035;
+}
+
+
+
+.light-navigation-bar {
+  background-color: #C3ACD0 !important;
+}
+
+.light .Navbar-Brand {
+  color: #000;
+}
+
+.light .Navbar-Brand:hover {
+  color: #9e9e9e;
+}
+
+
+
+.dark-navigation-bar {
+  background-color: #18122B !important;
+}
+
+.dark .Navbar-Brand {
+  color: #fff;
+}
+
+.dark .Navbar-Brand:hover {
+  color: #757575;
+}
+
+@media screen and (max-width: 1200px) {
+  .navigation-bar {
+    flex: 1 0 31%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .navigation-bar {
+    flex: 1 0 46%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navigation-bar {
+    flex: 1 0 96%;
+  }
+}
