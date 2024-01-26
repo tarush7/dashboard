@@ -1,6 +1,7 @@
 import React, { useState, useContext} from 'react';
-import './CSS/NavigationBar.css'
-import { ThemeContext } from './ThemeContext';
+import '../CSS/index.css'
+import '../CSS/NavigationBar.css'
+import { ThemeContext } from '../ThemeContext';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
@@ -43,7 +44,7 @@ function Navigationbar() {
     
 
     return (
-        <Navbar expand={false} className={`bg-body-tertiary navigation-bar-body ${NavigationBarBGClass} ${NavigationBarClass}`}>
+        <Navbar expand={false} className={`navigation-bar-body ${NavigationBarBGClass} ${NavigationBarClass}`}>
             <Container fluid>
                 <Navbar.Brand href="#" className={NavigationBarBrandClass}>Navbar Offcanvas</Navbar.Brand>
                 <Navbar.Toggle aria-controls="offcanvasNavbar" />
@@ -51,6 +52,8 @@ function Navigationbar() {
                     id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel"
                     placement="end"
+                    scroll={true}
+                    backdrop={true}
                 >
                     <Offcanvas.Header closeButton>
                         <Offcanvas.Title id="offcanvasNavbarLabel">

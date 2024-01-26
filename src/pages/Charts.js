@@ -1,8 +1,8 @@
 import React, { useContext, useEffect, useState, useMemo } from 'react';
-import "./CSS/charts.css"
+import "../CSS/charts.css"
 import { Card } from 'react-bootstrap';
 import { Doughnut, Bar, PolarArea, Line, Radar, Scatter } from 'react-chartjs-2';
-import { ThemeContext } from './ThemeContext';
+import { ThemeContext } from '../ThemeContext';
 import Chart from 'chart.js/auto';
 
 

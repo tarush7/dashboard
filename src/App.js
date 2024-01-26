@@ -1,15 +1,15 @@
 import React, { useContext } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import './CSS/App.css'
+import './CSS/index.css'
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { ThemeProvider } from "./ThemeContext.js";
 import { ThemeContext } from './ThemeContext';
-import Charts from './Charts';
-import SideNavigationBar from './sidebar';
-import Navigationbar from './Navbar';
-import SplitNavbar from './SplitNavbar';
-import User from './Users.js';
+import Charts from './pages/Charts.js';
+import SideNavigationBar from './bars/sidebar.js';
+import Navigationbar from './bars/Navbar.js';
+import SplitNavbar from './bars/SplitNavbar.js';
+import User from './pages/Users.js';
 
 
 
@@ -31,9 +31,11 @@ function Content() {
   return (
     <Router>
       <div className={`w-100 h-100 pb-3 ${mainBGClass}`}>
-        <div className='row'>
-          <div className='col-12 pt-3 navbar-row'>
+        <div className='header-row pt-3'>
+          <div className='col-auto split-navbar-row'>
             <SplitNavbar />
+          </div>
+          <div className='navbar-row'>  
             <Navigationbar />
           </div>
         </div>

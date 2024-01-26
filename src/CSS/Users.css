@@ -112,10 +112,28 @@
     color: white !important;
 }
 
-
-
-
 .no-border {
     border: none !important;
     border-bottom-width: 0 !important;
 }
+
+
+@media (max-width: 768px) {
+    .Users-mainBG {
+      margin-top: 10px;
+      margin-left: 5%;
+      margin-right: 0.6%;
+      padding: 10px;
+    }
+  
+    .table-main,
+    .table-header,
+    .default-table-header-elements,
+    .light-table-header-elements,
+    .dark-table-header-elements,
+    .default-table-body-elements,
+    .light-table-body-elements,
+    .dark-table-body-elements {
+      font-size: 14px;
+    }
+  }

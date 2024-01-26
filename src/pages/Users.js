@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
-import { ThemeContext } from './ThemeContext';
+import { ThemeContext } from '../ThemeContext';
 import { Badge, Button, Table } from 'react-bootstrap';
-import './CSS/Users.css'
+import '../CSS/Users.css'
 
 function User() {
   const { theme } = useContext(ThemeContext);
@@ -14,8 +14,8 @@ function User() {
   const TableBodyElementClass =`${theme}-table-body-elements`;
   
   return (
-    <div className={`Users-mainBG ${UserMainBGClass} vh-100`}>
-      <Table className='table-hover table-main'>
+    <div className={`Users-mainBG ${UserMainBGClass} vh-100`} style={{ maxHeight: '90vh', overflowY: 'auto' }}>
+      <Table responsive="sm" className='table-hover table-main'>
         <thead>
           <tr className={`${TableHeaderBGClass} m-5`}>
             <th className={`px-4 ${TableHeaderElementClass}`}>Name</th>

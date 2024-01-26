@@ -2,8 +2,9 @@ import React, { useState, useContext } from 'react';
 import { Modal, Button, Form } from 'react-bootstrap';
 import Navbar from 'react-bootstrap/Navbar';
 import { Nav } from 'react-bootstrap';
-import { ThemeContext } from './ThemeContext';
-import './CSS/SplitNavbar.css'
+import { ThemeContext } from '../ThemeContext';
+import '../CSS/SplitNavbar.css'
+import '../CSS/index.css'
 
 function SplitNavbar() {
     const { theme } = useContext(ThemeContext);
@@ -23,7 +24,7 @@ function SplitNavbar() {
         handleClose();
     };
     return (
-        <><Navbar className={`split-navbar-body ${SplitNavbarBGClass} ${SplitNavbarClass}`} >
+        <><Navbar className={` fixed-column split-navbar-body ${SplitNavbarBGClass} ${SplitNavbarClass}`} >
             <Nav.Link 
                 eventKey="/change-user" 
                 className="Nav-Element lastElement" 

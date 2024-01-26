@@ -1,9 +1,7 @@
 .navigation-bar-body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 15px;
-  width: 86%;
-  position: relative;
-  left: 195px;
+  width: 1305px; 
 }
 
 .default-navigation-bar {
@@ -46,20 +44,9 @@
   color: #757575;
 }
 
-@media screen and (max-width: 1200px) {
-  .navigation-bar {
-    flex: 1 0 31%;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .navigation-bar {
-    flex: 1 0 46%;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .navigation-bar {
-    flex: 1 0 96%;
+@media (max-width: 768px) {
+  .navigation-bar-body {
+      width: 100%;
+      position: static;
   }
 }
